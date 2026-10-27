@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prabhjot Kaur | Developer Portfolio</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Prabhjot Kaur, a Computer Programming graduate interested in software development and IT support."
+    >
+
+    <!-- Connect our CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect our JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <header class="navbar">
+        <a class="logo" href="#home">
+            <span class="logo-icon">&lt;/&gt;</span>
+            Prabhjot Kaur
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>
+                    Hi, I'm <span>Prabhjot Kaur</span>
+                </h1>
+
+                <h2>Software Developer | IT Support Enthusiast</h2>
+
+                <p class="intro">
+                    I'm a Computer Programming graduate from Niagara College
+                    who enjoys building useful applications, solving technical
+                    problems, and learning new technologies.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="button button-primary" href="#projects">
+                        Explore My Projects
+                    </a>
+
+                    <a class="button button-outline" href="#contact">
+                        Contact Me
+                    </a>
+                    <p id="welcome-message" class="welcome-message" aria-live="polite"></p>
+                    
+<button
+    class="theme-toggle"
+    id="theme-toggle"
+    type="button"
+    aria-label="Switch to light theme"
+    title="Switch theme"
+>
+    <span id="theme-icon" aria-hidden="true">☀️</span>
+    <span id="theme-label">Light mode</span>
+</button>
+
+                </div>
+                
+
+                <p class="location">Based in Toronto, Ontario, Canada</p>
+            </div>
+
+            <div class="hero-visual" aria-label="Decorative code illustration">
+                <div class="code-card">
+                    <div class="code-card-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>developer.js</p>
+                    </div>
+
+                    <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-blue">"Prabhjot"</span>,
+  interests: [
+    <span class="code-blue">"Software Development"</span>,
+    <span class="code-blue">"IT Support"</span>
+  ],
+  learning: <span class="code-purple">true</span>,
+  building: <span class="code-purple">true</span>
+};</code></pre>
+
+                    <p class="code-status">
+                        <span class="status-dot"></span>
+                        Ready to build something useful
+                    </p>
+                </div>
+
+                <div class="glow glow-one"></div>
+                <div class="glow glow-two"></div>
+            </div>
+
+        </section>
+
+        <!-- Projects section -->
+        
+<section id="projects" class="projects section">
+    <div class="container">
+
+        <p class="section-label">MY WORK</p>
+        <h2 class="section-title">Projects I've Built</h2>
+        <p class="section-description">
+            A selection of applications I've developed through
+            hands-on learning and collaborative projects.
+        </p>
+
+        <div class="projects-grid">
+
+            <!-- Project 1: Guhuza -->
+            <article class="project-card">
+                <img
+                    src="images/guhuza.png"
+                    alt="Guhuza job-seeker assessment platform screenshot"
+                    class="project-image"
+                    loading="lazy"
+                >
+
+                <div class="project-content">
+                    <span class="project-category">WEB APPLICATION</span>
+                    <h3>Guhuza — Job Assessment Platform</h3>
+
+                    <p>
+                        A collaborative project that helps job seekers
+                        practise job-related questions through quizzes,
+                        track scores, view rankings, and challenge others.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Prisma</span>
+                        <span>MySQL</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/PRABH2823/Quiz_Prototype/tree/main/Prototype-2_Code"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View GitHub Code ↗
+                    </a>
+                </div>
+            </article>
+
+            <!-- Project 2: Trash to Treasure -->
+            <article class="project-card">
+                <img
+                    src="images/trash-to-treasure.png"
+                    alt="Trash to Treasure mobile marketplace screenshot"
+                    class="project-image"
+                    loading="lazy"
+                >
+
+                <div class="project-content">
+                    <span class="project-category">MOBILE APPLICATION</span>
+                    <h3>Trash to Treasure</h3>
+
+                    <p>
+                        A mobile marketplace application designed to
+                        help people give unwanted items a second life
+                        by connecting users interested in reusing items.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>Xamarin</span>
+                        <span>SQLite</span>
+                        <span>Mobile UI</span>
+                    </div>
+
+                    <span class="project-note">
+                        Academic project
+                    </span>
+                </div>
+            </article>
+
+            <!-- Project 3: Library Management System -->
+            <article class="project-card">
+                <img
+                    src="images/library-management.png"
+                    alt="Library Management System application screenshot"
+                    class="project-image"
+                    loading="lazy"
+                >
+
+                <div class="project-content">
+                    <span class="project-category">DESKTOP APPLICATION</span>
+                    <h3>Library Management System</h3>
+
+                    <p>
+                        An application developed to practise managing
+                        library records and working with a database
+                        through a C# application.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>SQLite</span>
+                        <span>SQL</span>
+                        <span>CRUD Operations</span>
+                    </div>
+
+                    <span class="project-note">
+                        Academic project
+                    </span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Skills section -->
+        <section class="section" id="skills">
+            <p class="eyebrow">MY TOOLKIT</p>
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skills-list">
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>C#</span>
+                <span>HTML & CSS</span>
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>SQLite</span>
+                <span>Git & GitHub</span>
+                <span>Debugging</span>
+                <span>Testing</span>
+                <span>Troubleshooting</span>
+            </div>
+        </section>
+
+        <!-- About section -->
+        
+<section id="about" class="about section">
+    <div class="container">
+        <div class="about-grid">
+
+            <!-- Left side: About Me text -->
+            <div class="about-content">
+                <p class="section-label">ABOUT ME</p>
+
+                <h2 class="section-title">
+                    Building, learning, and solving problems.
+                </h2>
+
+                <p>
+                    I'm a Computer Programming graduate from
+                    Niagara College Toronto with an interest in
+                    software development, web technologies, and
+                    troubleshooting technical problems.
+                </p>
+
+                <p>
+                    Through academic and collaborative projects,
+                    I've gained hands-on experience building
+                    applications, working with databases, and
+                    debugging code.
+                </p>
+
+                <p>
+                    My projects include Guhuza, a job-seeker
+                    assessment platform; Trash to Treasure, a
+                    mobile marketplace application; and a Library
+                    Management System built with C# and SQLite.
+                </p>
+
+                <p>
+                    I'm looking for an opportunity to apply my
+                    technical skills, continue learning, and
+                    contribute to a team as an entry-level
+                    Software Developer or IT Support professional.
+                </p>
+
+                <div class="about-tags">
+                    <span class="about-tag">Computer Programming Diploma</span>
+                    <span class="about-tag">Web Development</span>
+                    <span class="about-tag">Problem Solving</span>
+                </div>
+            </div>
+
+            <!-- Right side: Developer illustration made with HTML -->
+            
+<div class="about-visual">
+    <div class="journey-card">
+
+        <div class="journey-header">
+            <span class="journey-label">MY JOURNEY</span>
+            <span class="journey-icon">✦</span>
+        </div>
+
+        <div class="journey-timeline">
+
+            <div class="journey-item">
+                <div class="journey-marker">01</div>
+                <div class="journey-details">
+                    <h3>My Foundation</h3>
+                    <p>Computer Programming Diploma</p>
+                    <span>Niagara College Toronto · 2025</span>
+                </div>
+            </div>
+
+            <div class="journey-item">
+                <div class="journey-marker">02</div>
+                <div class="journey-details">
+                    <h3>What I've Built</h3>
+                    <p>Three hands-on projects</p>
+                    <span>Web applications, mobile apps & databases</span>
+                </div>
+            </div>
+
+            <div class="journey-item">
+                <div class="journey-marker">03</div>
+                <div class="journey-details">
+                    <h3>What I Bring</h3>
+                    <p>Curiosity and problem-solving</p>
+                    <span>Coding, debugging & technical troubleshooting</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="journey-footer">
+            <span class="journey-status"></span>
+            Ready for the next opportunity
+        </div>
+
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact section -->
+        
+<section id="contact" class="contact section">
+    <div class="container">
+
+        <div class="contact-card">
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2 class="section-title">
+                Let's Connect
+            </h2>
+
+            <p class="contact-description">
+                I'm looking for opportunities to start my career
+                in Software Development or IT Support. If you're
+                hiring, have a project idea, or would like to
+                connect professionally, I'd love to hear from you.
+            </p>
+
+            <a
+                href="mailto:prabhkaur0711@gmail.com"
+                class="button contact-email"
+            >
+                <span aria-hidden="true">✉</span>
+                Email Me
+            </a>
+
+            <div class="contact-links">
+                <a
+                    href="https://www.linkedin.com/in/prabhjot-kaur-297b812a7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-social-link"
+                >
+                    LinkedIn ↗
+                </a>
+
+                <a
+                    href="https://github.com/PRABH2823"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-social-link"
+                >
+                    GitHub ↗
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Prabhjot Kaur · Built with HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
